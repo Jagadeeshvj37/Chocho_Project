@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocho</title>
+    <link rel="icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/"><img src="img/icon.jpg" alt="" width="100px"></a>
+            <a href="/"><h2 class="company-name">Chocho</h2></a>
+        </div>
+        <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#product"><li>Products</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    <!-- Home page -->
+    <div class="main-container" id="home">
+        <img src="img/main-page-img.jpg" alt="main page image" width="50%">
+        <div class="main-right">
+            <h2>Chocho Candy</h2>
+            <p>The main dairy product is milk. It is consumed in different ways across the world. The nutritional value of milk is great, as it consists of nutrients like protein, fat, lactose and other essential biochemical chemicals. Dairy products are important in everyday life.</p>
+        </div>
+    </div>
+
+    <!-- product -->
+    <h1 style="text-align: center; margin-top: 100px;" id="product">Types of Flovers</h1>
+    <div class="product-container">
+        
+        <div class=" product box-1">
+            <img src="img/bubbly.jpg" alt="" width="230px" height="270px">
+            <h2>Bubbly</h2>
+        </div>
+        <div class=" product box-2">
+            <img src="img/fruit_nut.jpg" alt="" width="230px" height="270px">
+            <h2>Fruits & Nuts</h2>
+        </div>
+        <div class=" product box-3">
+            <img src="img/orea.jpg" alt="" width="230px" height="270px">
+            <h2>Oreo</h2>
+        </div>
+        <div class=" product box-4">
+            <img src="img/silk.jpg" alt="" width="230px" height="270px">
+            <h2>Silk</h2>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <h1 style="text-align: center; margin-top: 100px; margin-bottom: 50px;" id="contact">Contact</h1>
+    <div class="contact-container" >
+        <h2>Phone no: <span>1234567890</span></h2>
+        <h2>Email id: <span>abc@gmail.com</span></h2>
+    </div>
+
+</body>
+<script>
+    const menu = document.querySelector('.menu')
+    const menulist=document.querySelector('nav ul')
+
+    menu.addEventListener('click',()=>{
+        menulist.classList.toggle('showmenu')
+    })
+</script>
+</html>

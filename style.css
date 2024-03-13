@@ -1,0 +1,113 @@
+body{
+    background-color: #330072;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.company-name{
+    padding-left: 20px;
+}
+.container{
+    display: flex;
+    padding-left: 30px;
+    
+}
+ul{
+    
+}
+li{
+    font-size: 20px;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 70px;
+    cursor: pointer;
+}
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color:aliceblue;
+    margin: 5px;
+    margin-right: 40px;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+.main-container{
+    margin-top: 50px;
+    display: flex;
+}
+.main-container img{
+    flex-basis: 50%;
+}
+.main-container .main-right{
+    flex-basis: 50%;
+}
+.main-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex: 1;
+}
+.main-right h2{
+    color: chocolate;
+    font-size: xx-large;
+}
+.product-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+    flex-grow: 1;
+    margin: 50px;
+}
+.contact-container{
+    text-align: center;
+}
+
+@media all and (max-width:800px){
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+nav{
+    flex-direction: column;
+}
+nav li{
+    display: block;
+    padding: 20px 0;
+    letter-spacing: 3px;
+}
+ul{
+    text-align: center;
+    padding:0;
+    display: none;
+}
+.showmenu{
+    display: block;
+}
+.main-container{
+    flex-direction: column;
+}
+.main-container img{
+    width: 100%;
+}
+}
